@@ -1,0 +1,36 @@
+-volumes
+/dev/disk0 (internal):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                         121.3 GB   disk0
+   1:                        EFI EFI                     314.6 MB   disk0s1
+   2:                 Apple_APFS Container disk1         121.0 GB   disk0s2
+
+/dev/disk1 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +121.0 GB   disk1
+                                 Physical Store disk0s2
+   1:                APFS Volume Macintosh HD            32.9 GB    disk1s1
+   2:                APFS Volume Preboot                 21.8 MB    disk1s2
+   3:                APFS Volume Recovery                519.2 MB   disk1s3
+   4:                APFS Volume VM                      1.1 GB     disk1s4
+
+Filesystem      Size   Used  Avail Capacity iused               ifree %iused  Mounted on
+/dev/disk1s1   113Gi   31Gi   80Gi    28%  731151 9223372036854044656    0%   /
+devfs          186Ki  186Ki    0Bi   100%     644                   0  100%   /dev
+/dev/disk1s4   113Gi  1.0Gi   80Gi     2%       1 9223372036854775806    0%   /private/var/vm
+map -hosts       0Bi    0Bi    0Bi   100%       0                   0  100%   /net
+map auto_home    0Bi    0Bi    0Bi   100%       0                   0  100%   /home
+-cpu
+      Number of Processors: 1
+      Total Number of Cores: 2
+hw.ncpu: 4
+-ram
+      Memory: 8 GB
+-network
+Interface: en0, datalink type: EN10MB (Ethernet)
+Starting arp-scan 1.9.5 with 256 hosts (https://github.com/royhills/arp-scan)
+192.168.0.1	3c:df:a9:17:8f:19	ARRIS Group, Inc.
+192.168.0.5	94:10:3e:b8:25:99	Belkin International Inc.
+
+515 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.9.5: 256 hosts scanned in 1.846 seconds (138.68 hosts/sec). 2 responded
