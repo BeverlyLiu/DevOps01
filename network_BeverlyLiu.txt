@@ -1,0 +1,7 @@
+Interface: en0, datalink type: EN10MB (Ethernet)
+Starting arp-scan 1.9.5 with 256 hosts (https://github.com/royhills/arp-scan)
+192.168.0.1	3c:df:a9:17:8f:19	ARRIS Group, Inc.
+192.168.0.5	94:10:3e:b8:25:99	Belkin International Inc.
+
+515 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.9.5: 256 hosts scanned in 1.846 seconds (138.68 hosts/sec). 2 responded
