@@ -1,0 +1,3 @@
+      Number of Processors: 1
+      Total Number of Cores: 2
+hw.ncpu: 4
