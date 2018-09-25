@@ -1,0 +1,40 @@
+/dev/disk0 (internal):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                         121.3 GB   disk0
+   1:                        EFI EFI                     314.6 MB   disk0s1
+   2:                 Apple_APFS Container disk1         121.0 GB   disk0s2
+
+/dev/disk1 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +121.0 GB   disk1
+                                 Physical Store disk0s2
+   1:                APFS Volume Macintosh HD            32.8 GB    disk1s1
+   2:                APFS Volume Preboot                 21.8 MB    disk1s2
+   3:                APFS Volume Recovery                519.2 MB   disk1s3
+   4:                APFS Volume VM                      2.1 GB     disk1s4
+
+/dev/disk2 (disk image):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        +43.4 MB    disk2
+   1:                  Apple_HFS Sublime Text            43.3 MB    disk2s1
+
+Filesystem                               Size   Used  Avail Capacity iused               ifree %iused  Mounted on
+/dev/disk1s1                            113Gi   31Gi   80Gi    28%  730963 9223372036854044844    0%   /
+devfs                                   189Ki  189Ki    0Bi   100%     652                   0  100%   /dev
+/dev/disk1s4                            113Gi  2.0Gi   80Gi     3%       2 9223372036854775805    0%   /private/var/vm
+map -hosts                                0Bi    0Bi    0Bi   100%       0                   0  100%   /net
+map auto_home                             0Bi    0Bi    0Bi   100%       0                   0  100%   /home
+/dev/disk2s1                             41Mi   34Mi  7.1Mi    83%     122          4294967157    0%   /Volumes/Sublime Text
+/Volumes/Sublime Text/Sublime Text.app   41Mi   34Mi  7.1Mi    83%     122          4294967157    0%   /private/var/folders/rv/mszvzhb14kg0yy_7bw46tr7r0000gn/T/AppTranslocation/310BF2AB-1306-4709-855A-D5BE143B0521
+      Number of Processors: 1
+      Total Number of Cores: 2
+      Memory: 8 GB
+hw.ncpu: 4
+Interface: en0, datalink type: EN10MB (Ethernet)
+Starting arp-scan 1.9.5 with 256 hosts (https://github.com/royhills/arp-scan)
+192.168.0.1	3c:df:a9:17:8f:19	ARRIS Group, Inc.
+192.168.0.5	94:10:3e:b8:25:99	Belkin International Inc.
+192.168.0.2	cc:08:8d:0b:7a:28	Apple, Inc.
+
+518 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.9.5: 256 hosts scanned in 1.844 seconds (138.83 hosts/sec). 3 responded
